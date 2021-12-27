@@ -1,0 +1,54 @@
+{
+  "name": "mapproject",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.23.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "PUBLIC_URL=http://cs.newpaltz.edu/p/f21-12/f21-v2 HOST=cs.newpaltz.edu PORT=10013 NODE_ENV=production react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "go": "node server/server.js",
+    "time": "concurrently \" node server/server.js \" \"npm start \""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:10012",
+  "homepage": "https://cs.newpaltz.edu/p/f21-12/f21-v2"
+}
